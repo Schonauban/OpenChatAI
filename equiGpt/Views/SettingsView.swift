@@ -34,13 +34,6 @@ struct SettingsView: View {
                             .font(.system(size: 16))
                             .padding(.horizontal, 16)
                         
-                        SecureField("Clé API Tavily", text: $apiSettings.tavilyAPIKey)
-                            .font(.system(size: 16))
-                            .padding(12)
-                            .background(Color(.systemGray6))
-                            .cornerRadius(10)
-                            .padding(.horizontal, 16)
-                        
                         if isLoading {
                             ProgressView()
                                 .scaleEffect(0.8)
