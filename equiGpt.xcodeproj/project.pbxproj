@@ -1,0 +1,1042 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		462259272DA7787A00BB655A /* equiWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 462259262DA7787A00BB655A /* equiWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		462259282DA7787A00BB655A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469612102DA7276000F65A9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 462259252DA7787A00BB655A;
+			remoteInfo = "equiWatch Watch App";
+		};
+		462259362DA7787B00BB655A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469612102DA7276000F65A9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 462259252DA7787A00BB655A;
+			remoteInfo = "equiWatch Watch App";
+		};
+		462259402DA7787B00BB655A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469612102DA7276000F65A9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 462259252DA7787A00BB655A;
+			remoteInfo = "equiWatch Watch App";
+		};
+		469612262DA7276100F65A9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469612102DA7276000F65A9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 469612172DA7276000F65A9E;
+			remoteInfo = equiGpt;
+		};
+		469612302DA7276100F65A9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469612102DA7276000F65A9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 469612172DA7276000F65A9E;
+			remoteInfo = equiGpt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4622594A2DA7787B00BB655A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				462259272DA7787A00BB655A /* equiWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		462259212DA7787A00BB655A /* equiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = equiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		462259262DA7787A00BB655A /* equiWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "equiWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		462259352DA7787B00BB655A /* equiWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "equiWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4622593F2DA7787B00BB655A /* equiWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "equiWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		469612182DA7276000F65A9E /* equiGpt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = equiGpt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		469612252DA7276100F65A9E /* equiGptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = equiGptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4696122F2DA7276100F65A9E /* equiGptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = equiGptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4622592A2DA7787A00BB655A /* equiWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "equiWatch Watch App";
+			sourceTree = "<group>";
+		};
+		462259382DA7787B00BB655A /* equiWatch Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "equiWatch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		462259422DA7787B00BB655A /* equiWatch Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "equiWatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		4696121A2DA7276000F65A9E /* equiGpt */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = equiGpt;
+			sourceTree = "<group>";
+		};
+		469612282DA7276100F65A9E /* equiGptTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = equiGptTests;
+			sourceTree = "<group>";
+		};
+		469612322DA7276100F65A9E /* equiGptUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = equiGptUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		462259232DA7787A00BB655A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462259322DA7787B00BB655A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4622593C2DA7787B00BB655A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469612152DA7276000F65A9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469612222DA7276100F65A9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4696122C2DA7276100F65A9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4696120F2DA7276000F65A9E = {
+			isa = PBXGroup;
+			children = (
+				4696121A2DA7276000F65A9E /* equiGpt */,
+				469612282DA7276100F65A9E /* equiGptTests */,
+				469612322DA7276100F65A9E /* equiGptUITests */,
+				4622592A2DA7787A00BB655A /* equiWatch Watch App */,
+				462259382DA7787B00BB655A /* equiWatch Watch AppTests */,
+				462259422DA7787B00BB655A /* equiWatch Watch AppUITests */,
+				469612192DA7276000F65A9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		469612192DA7276000F65A9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				469612182DA7276000F65A9E /* equiGpt.app */,
+				469612252DA7276100F65A9E /* equiGptTests.xctest */,
+				4696122F2DA7276100F65A9E /* equiGptUITests.xctest */,
+				462259212DA7787A00BB655A /* equiWatch.app */,
+				462259262DA7787A00BB655A /* equiWatch Watch App.app */,
+				462259352DA7787B00BB655A /* equiWatch Watch AppTests.xctest */,
+				4622593F2DA7787B00BB655A /* equiWatch Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		462259202DA7787A00BB655A /* equiWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4622594B2DA7787B00BB655A /* Build configuration list for PBXNativeTarget "equiWatch" */;
+			buildPhases = (
+				4622591F2DA7787A00BB655A /* Resources */,
+				4622594A2DA7787B00BB655A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				462259292DA7787A00BB655A /* PBXTargetDependency */,
+			);
+			name = equiWatch;
+			packageProductDependencies = (
+			);
+			productName = equiWatch;
+			productReference = 462259212DA7787A00BB655A /* equiWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		462259252DA7787A00BB655A /* equiWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462259472DA7787B00BB655A /* Build configuration list for PBXNativeTarget "equiWatch Watch App" */;
+			buildPhases = (
+				462259222DA7787A00BB655A /* Sources */,
+				462259232DA7787A00BB655A /* Frameworks */,
+				462259242DA7787A00BB655A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4622592A2DA7787A00BB655A /* equiWatch Watch App */,
+			);
+			name = "equiWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "equiWatch Watch App";
+			productReference = 462259262DA7787A00BB655A /* equiWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		462259342DA7787B00BB655A /* equiWatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4622594E2DA7787B00BB655A /* Build configuration list for PBXNativeTarget "equiWatch Watch AppTests" */;
+			buildPhases = (
+				462259312DA7787B00BB655A /* Sources */,
+				462259322DA7787B00BB655A /* Frameworks */,
+				462259332DA7787B00BB655A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				462259372DA7787B00BB655A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				462259382DA7787B00BB655A /* equiWatch Watch AppTests */,
+			);
+			name = "equiWatch Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "equiWatch Watch AppTests";
+			productReference = 462259352DA7787B00BB655A /* equiWatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4622593E2DA7787B00BB655A /* equiWatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462259512DA7787B00BB655A /* Build configuration list for PBXNativeTarget "equiWatch Watch AppUITests" */;
+			buildPhases = (
+				4622593B2DA7787B00BB655A /* Sources */,
+				4622593C2DA7787B00BB655A /* Frameworks */,
+				4622593D2DA7787B00BB655A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				462259412DA7787B00BB655A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				462259422DA7787B00BB655A /* equiWatch Watch AppUITests */,
+			);
+			name = "equiWatch Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "equiWatch Watch AppUITests";
+			productReference = 4622593F2DA7787B00BB655A /* equiWatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		469612172DA7276000F65A9E /* equiGpt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469612392DA7276100F65A9E /* Build configuration list for PBXNativeTarget "equiGpt" */;
+			buildPhases = (
+				469612142DA7276000F65A9E /* Sources */,
+				469612152DA7276000F65A9E /* Frameworks */,
+				469612162DA7276000F65A9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4696121A2DA7276000F65A9E /* equiGpt */,
+			);
+			name = equiGpt;
+			packageProductDependencies = (
+			);
+			productName = equiGpt;
+			productReference = 469612182DA7276000F65A9E /* equiGpt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		469612242DA7276100F65A9E /* equiGptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4696123C2DA7276100F65A9E /* Build configuration list for PBXNativeTarget "equiGptTests" */;
+			buildPhases = (
+				469612212DA7276100F65A9E /* Sources */,
+				469612222DA7276100F65A9E /* Frameworks */,
+				469612232DA7276100F65A9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				469612272DA7276100F65A9E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				469612282DA7276100F65A9E /* equiGptTests */,
+			);
+			name = equiGptTests;
+			packageProductDependencies = (
+			);
+			productName = equiGptTests;
+			productReference = 469612252DA7276100F65A9E /* equiGptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4696122E2DA7276100F65A9E /* equiGptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4696123F2DA7276100F65A9E /* Build configuration list for PBXNativeTarget "equiGptUITests" */;
+			buildPhases = (
+				4696122B2DA7276100F65A9E /* Sources */,
+				4696122C2DA7276100F65A9E /* Frameworks */,
+				4696122D2DA7276100F65A9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				469612312DA7276100F65A9E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				469612322DA7276100F65A9E /* equiGptUITests */,
+			);
+			name = equiGptUITests;
+			packageProductDependencies = (
+			);
+			productName = equiGptUITests;
+			productReference = 4696122F2DA7276100F65A9E /* equiGptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		469612102DA7276000F65A9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					462259202DA7787A00BB655A = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					462259252DA7787A00BB655A = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					462259342DA7787B00BB655A = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 462259252DA7787A00BB655A;
+					};
+					4622593E2DA7787B00BB655A = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 462259252DA7787A00BB655A;
+					};
+					469612172DA7276000F65A9E = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					469612242DA7276100F65A9E = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 469612172DA7276000F65A9E;
+					};
+					4696122E2DA7276100F65A9E = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 469612172DA7276000F65A9E;
+					};
+				};
+			};
+			buildConfigurationList = 469612132DA7276000F65A9E /* Build configuration list for PBXProject "equiGpt" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4696120F2DA7276000F65A9E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				462258DC2DA7680E00BB655A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 469612192DA7276000F65A9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				469612172DA7276000F65A9E /* equiGpt */,
+				469612242DA7276100F65A9E /* equiGptTests */,
+				4696122E2DA7276100F65A9E /* equiGptUITests */,
+				462259202DA7787A00BB655A /* equiWatch */,
+				462259252DA7787A00BB655A /* equiWatch Watch App */,
+				462259342DA7787B00BB655A /* equiWatch Watch AppTests */,
+				4622593E2DA7787B00BB655A /* equiWatch Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4622591F2DA7787A00BB655A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462259242DA7787A00BB655A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462259332DA7787B00BB655A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4622593D2DA7787B00BB655A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469612162DA7276000F65A9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469612232DA7276100F65A9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4696122D2DA7276100F65A9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		462259222DA7787A00BB655A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462259312DA7787B00BB655A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4622593B2DA7787B00BB655A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469612142DA7276000F65A9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469612212DA7276100F65A9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4696122B2DA7276100F65A9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		462259292DA7787A00BB655A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 462259252DA7787A00BB655A /* equiWatch Watch App */;
+			targetProxy = 462259282DA7787A00BB655A /* PBXContainerItemProxy */;
+		};
+		462259372DA7787B00BB655A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 462259252DA7787A00BB655A /* equiWatch Watch App */;
+			targetProxy = 462259362DA7787B00BB655A /* PBXContainerItemProxy */;
+		};
+		462259412DA7787B00BB655A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 462259252DA7787A00BB655A /* equiWatch Watch App */;
+			targetProxy = 462259402DA7787B00BB655A /* PBXContainerItemProxy */;
+		};
+		469612272DA7276100F65A9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 469612172DA7276000F65A9E /* equiGpt */;
+			targetProxy = 469612262DA7276100F65A9E /* PBXContainerItemProxy */;
+		};
+		469612312DA7276100F65A9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 469612172DA7276000F65A9E /* equiGpt */;
+			targetProxy = 469612302DA7276100F65A9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		462259482DA7787B00BB655A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = equiWatch;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Micro demndé";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		462259492DA7787B00BB655A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = equiWatch;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Micro demndé";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
+		4622594C2DA7787B00BB655A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				INFOPLIST_KEY_CFBundleDisplayName = equiWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4622594D2DA7787B00BB655A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				INFOPLIST_KEY_CFBundleDisplayName = equiWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4622594F2DA7787B00BB655A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "olivvein.equiWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/equiWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/equiWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		462259502DA7787B00BB655A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "olivvein.equiWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/equiWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/equiWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
+		462259522DA7787B00BB655A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "olivvein.equiWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "equiWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		462259532DA7787B00BB655A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "olivvein.equiWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "equiWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
+		469612372DA7276100F65A9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		469612382DA7276100F65A9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4696123A2DA7276100F65A9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = EquiGPT;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Besoin du micro";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Besoin du micro";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiGpt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4696123B2DA7276100F65A9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = EquiGPT;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Besoin du micro";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Besoin du micro";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiGpt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4696123D2DA7276100F65A9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiGptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/equiGpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/equiGpt";
+			};
+			name = Debug;
+		};
+		4696123E2DA7276100F65A9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiGptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/equiGpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/equiGpt";
+			};
+			name = Release;
+		};
+		469612402DA7276100F65A9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiGptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = equiGpt;
+			};
+			name = Debug;
+		};
+		469612412DA7276100F65A9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27GSQ5633S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = olivvein.equiGptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = equiGpt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		462259472DA7787B00BB655A /* Build configuration list for PBXNativeTarget "equiWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462259482DA7787B00BB655A /* Debug */,
+				462259492DA7787B00BB655A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4622594B2DA7787B00BB655A /* Build configuration list for PBXNativeTarget "equiWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4622594C2DA7787B00BB655A /* Debug */,
+				4622594D2DA7787B00BB655A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4622594E2DA7787B00BB655A /* Build configuration list for PBXNativeTarget "equiWatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4622594F2DA7787B00BB655A /* Debug */,
+				462259502DA7787B00BB655A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		462259512DA7787B00BB655A /* Build configuration list for PBXNativeTarget "equiWatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462259522DA7787B00BB655A /* Debug */,
+				462259532DA7787B00BB655A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469612132DA7276000F65A9E /* Build configuration list for PBXProject "equiGpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469612372DA7276100F65A9E /* Debug */,
+				469612382DA7276100F65A9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469612392DA7276100F65A9E /* Build configuration list for PBXNativeTarget "equiGpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4696123A2DA7276100F65A9E /* Debug */,
+				4696123B2DA7276100F65A9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4696123C2DA7276100F65A9E /* Build configuration list for PBXNativeTarget "equiGptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4696123D2DA7276100F65A9E /* Debug */,
+				4696123E2DA7276100F65A9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4696123F2DA7276100F65A9E /* Build configuration list for PBXNativeTarget "equiGptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469612402DA7276100F65A9E /* Debug */,
+				469612412DA7276100F65A9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		462258DC2DA7680E00BB655A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 469612102DA7276000F65A9E /* Project object */;
+}
