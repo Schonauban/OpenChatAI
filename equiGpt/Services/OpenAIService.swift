@@ -193,8 +193,7 @@ class OpenAIService {
         let requestBody = ResponseAPIRequest(
             model: model,
             input: input,
-            //tools: [ResponseAPIRequest.Tool(type: "web_search_preview")],
-            tools: [],
+            tools: [ResponseAPIRequest.Tool(type: "web_search_preview")],
             stream: true
         )
         request.httpBody = try JSONEncoder().encode(requestBody)
@@ -206,14 +205,25 @@ class OpenAIService {
         let session = URLSession(configuration: configuration)
         
         return try await withCheckedThrowingContinuation { continuation in
+            var hasResumed = false
+            var accumulatedText = ""
+            var accumulatedAnnotations: [ResponseAPIResponse.Output.Content.Annotation] = []
+            
             let streamingHandler = StreamingResponseHandler(
                 onDelta: { delta in
                     onDelta(delta)
+                    accumulatedText += delta
                 },
                 onComplete: { text, annotations in
-                    continuation.resume(returning: (text, annotations))
+                    guard !hasResumed else { return }
+                    hasResumed = true
+                    accumulatedText += text
+                    accumulatedAnnotations.append(contentsOf: annotations)
+                    continuation.resume(returning: (accumulatedText, accumulatedAnnotations))
                 },
                 onError: { error in
+                    guard !hasResumed else { return }
+                    hasResumed = true
                     continuation.resume(throwing: error)
                 }
             )
@@ -223,6 +233,8 @@ class OpenAIService {
             
             // Set up a timeout timer
             let timeoutTimer = Timer.scheduledTimer(withTimeInterval: 300, repeats: false) { _ in
+                guard !hasResumed else { return }
+                hasResumed = true
                 task.cancel()
                 continuation.resume(throwing: OpenAIServiceError.networkError(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Request timed out"])))
             }

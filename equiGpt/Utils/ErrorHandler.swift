@@ -28,6 +28,7 @@ class ErrorHandler {
         if let appError = error as? AppError {
             return appError.localizedDescription
         } else {
+            print("An unexpected error occurred: \(error.localizedDescription)")
             return "An unexpected error occurred: \(error.localizedDescription)"
         }
     }

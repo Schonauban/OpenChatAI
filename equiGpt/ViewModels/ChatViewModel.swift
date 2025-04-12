@@ -125,11 +125,14 @@ class ChatViewModel: NSObject, ObservableObject {
                         Task { @MainActor in
                             guard let self = self else { return }
                             self.streamingMessage += delta
+                            //show delta in console
+                            print("Delta: \(delta)")
                             if let lastIndex = self.messages.indices.last {
                                 self.messages[lastIndex].content = self.streamingMessage
                             }
                         }
                     }
+                    
                 )
                 
                 if let lastIndex = messages.indices.last {
@@ -227,6 +230,7 @@ class StreamingResponseHandler: NSObject, URLSessionDataDelegate {
     private var onDelta: (String) -> Void
     private var onComplete: (String, [ResponseAPIResponse.Output.Content.Annotation]) -> Void
     private var onError: (Error) -> Void
+    private var buffer = ""
     
     init(
         onDelta: @escaping (String) -> Void,
@@ -239,20 +243,18 @@ class StreamingResponseHandler: NSObject, URLSessionDataDelegate {
     }
     
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
-        // Print raw response data
-        if let responseString = String(data: data, encoding: .utf8) {
-            print("API Response: \(responseString)")
-        }
-        
         guard let string = String(data: data, encoding: .utf8) else {
             onError(OpenAIServiceError.invalidResponse)
             return
         }
         
-        // Split the response into individual events
-        let events = string.components(separatedBy: "\n\n")
+        buffer += string
         
-        for event in events {
+        // Process complete events
+        let events = buffer.components(separatedBy: "\n\n")
+        buffer = events.last ?? "" // Keep the last potentially incomplete event
+        
+        for event in events.dropLast() {
             guard !event.isEmpty else { continue }
             
             // Split event into type and data
@@ -262,33 +264,31 @@ class StreamingResponseHandler: NSObject, URLSessionDataDelegate {
             let eventType = parts[0].replacingOccurrences(of: "event: ", with: "")
             let eventData = parts[1].replacingOccurrences(of: "data: ", with: "")
             
-            print("Event Type: \(eventType)")
-            print("Event Data: \(eventData)")
-            
             guard let jsonData = eventData.data(using: .utf8) else {
-                onError(OpenAIServiceError.decodingError(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Failed to convert event data to UTF-8"])))
                 continue
             }
             
             do {
                 switch eventType {
                 case "response.output_text.delta":
-                    let delta = try JSONDecoder().decode(OutputTextDelta.self, from: jsonData)
-                    currentMessage += delta.delta
-                    onDelta(delta.delta)
+                    if let delta = try? JSONDecoder().decode(OutputTextDelta.self, from: jsonData) {
+                        currentMessage += delta.delta
+                        onDelta(delta.delta)
+                    }
                     
                 case "response.output_text.done":
-                    let done = try JSONDecoder().decode(OutputTextDone.self, from: jsonData)
-                    currentMessage = done.text
-                    currentAnnotations = done.annotations ?? []
-                    onComplete(done.text, done.annotations ?? [])
+                    if let done = try? JSONDecoder().decode(OutputTextDone.self, from: jsonData) {
+                        currentMessage = done.text
+                        currentAnnotations = done.annotations ?? []
+                        onComplete(done.text, done.annotations ?? [])
+                    }
                     
                 default:
                     print("Unhandled event type: \(eventType)")
                 }
             } catch {
                 print("Error decoding event: \(error)")
-                onError(OpenAIServiceError.decodingError(error))
+                // Don't propagate the error for individual events, just log it
             }
         }
     }

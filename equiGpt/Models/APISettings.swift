@@ -45,7 +45,7 @@ class APISettings: ObservableObject {
     }
     
     init() {
-        self.apiKey = UserDefaults.standard.string(forKey: "OpenAIAPIKey") ?? "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"
+        self.apiKey = UserDefaults.standard.string(forKey: "OpenAIAPIKey") ?? ""
         self.model = UserDefaults.standard.string(forKey: "OpenAIModel") ?? "gpt-3.5-turbo"
         self.ttsEnabled = UserDefaults.standard.bool(forKey: "TTSEnabled") || true
         self.ttsModel = UserDefaults.standard.string(forKey: "TTSModel") ?? "tts-1"
