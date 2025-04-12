@@ -26,7 +26,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ZStack {
                 Color(.systemBackground)
                     .ignoresSafeArea()
@@ -150,7 +150,7 @@ struct ContentView: View {
             .navigationTitle(viewModel.conversationTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
+                ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
                         saveCurrentConversation()
                         viewModel.resetConversation()
@@ -160,7 +160,7 @@ struct ContentView: View {
                     }
                 }
                 
-                ToolbarItem(placement: .confirmationAction) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: { 
                         showingSettings = true 
                     }) {
@@ -169,7 +169,7 @@ struct ContentView: View {
                     }
                 }
                 
-                ToolbarItem(placement: .automatic) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         showingHistory = true
                     }) {
@@ -185,7 +185,7 @@ struct ContentView: View {
                 ConversationHistoryView(history: history, selectedConversation: $selectedConversation)
             }
         }
-        .toolbar(.hidden, for: .navigationBar)
+        .navigationViewStyle(.stack)
         .onChange(of: selectedConversation) { newConversation in
             if let conversation = newConversation {
                 viewModel.messages = conversation.messages

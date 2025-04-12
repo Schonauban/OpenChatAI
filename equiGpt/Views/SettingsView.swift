@@ -53,7 +53,7 @@ struct SettingsView: View {
                                         .font(.system(size: 16))
                                 }
                             }
-                            .pickerStyle(.navigationLink)
+                            .pickerStyle(.menu)
                             .padding(.horizontal, 16)
                         }
                     }
@@ -77,7 +77,7 @@ struct SettingsView: View {
                                 Text("tts-1-hd").tag("tts-1-hd")
                                 Text("gpt-4o-mini-tts").tag("gpt-4o-mini-tts")
                             }
-                            .pickerStyle(.navigationLink)
+                            .pickerStyle(.menu)
                             .font(.system(size: 16))
                             .padding(.horizontal, 16)
                             
@@ -94,7 +94,7 @@ struct SettingsView: View {
                                 Text("shimmer").tag("shimmer")
                                 Text("verse").tag("verse")
                             }
-                            .pickerStyle(.navigationLink)
+                            .pickerStyle(.menu)
                             .font(.system(size: 16))
                             .padding(.horizontal, 16)
                         }
@@ -123,7 +123,7 @@ struct SettingsView: View {
             .navigationTitle("Paramètres")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Fermer") {
                         presentationMode.wrappedValue.dismiss()
                     }
@@ -134,6 +134,7 @@ struct SettingsView: View {
                 fetchModels()
             }
         }
+        .navigationViewStyle(.stack)
     }
     
     private func fetchModels() {
