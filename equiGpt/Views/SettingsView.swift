@@ -73,26 +73,18 @@ struct SettingsView: View {
                         
                         if apiSettings.ttsEnabled {
                             Picker("Modèle TTS", selection: $apiSettings.ttsModel) {
-                                Text("tts-1").tag("tts-1")
-                                Text("tts-1-hd").tag("tts-1-hd")
-                                Text("gpt-4o-mini-tts").tag("gpt-4o-mini-tts")
+                                ForEach(["tts-1", "tts-1-hd", "gpt-4o-mini-tts"], id: \.self) { model in
+                                    Text(model)
+                                }
                             }
                             .pickerStyle(.menu)
                             .font(.system(size: 16))
                             .padding(.horizontal, 16)
                             
                             Picker("Voix", selection: $apiSettings.ttsVoice) {
-                                Text("alloy").tag("alloy")
-                                Text("ash").tag("ash")
-                                Text("ballad").tag("ballad")
-                                Text("coral").tag("coral")
-                                Text("echo").tag("echo")
-                                Text("fable").tag("fable")
-                                Text("onyx").tag("onyx")
-                                Text("nova").tag("nova")
-                                Text("sage").tag("sage")
-                                Text("shimmer").tag("shimmer")
-                                Text("verse").tag("verse")
+                                ForEach(["alloy", "ash", "ballad", "coral", "echo", "fable", "onyx", "nova", "sage", "shimmer", "verse"], id: \.self) { voice in
+                                    Text(voice)
+                                }
                             }
                             .pickerStyle(.menu)
                             .font(.system(size: 16))

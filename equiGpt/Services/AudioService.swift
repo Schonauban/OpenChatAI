@@ -47,7 +47,7 @@ class AudioService: NSObject, ObservableObject {
         guard let audioSession = audioSession else { return }
         
         // Request permission if needed
-        AVAudioApplication.requestRecordPermission { [weak self] granted in
+        audioSession.requestRecordPermission { [weak self] granted in
             guard let self = self else { return }
             if granted {
                 do {
